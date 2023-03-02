@@ -1,0 +1,15 @@
+spin_version = "1"
+authors = ["Cute_Wisp <sweatpotato13@gmail.com>"]
+description = ""
+name = "spin"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "spin"
+source = "target/wasm32-wasi/release/spin.wasm"
+allowed_http_hosts = []
+[component.trigger]
+route = "/..."
+[component.build]
+command = "cargo build --target wasm32-wasi --release"
