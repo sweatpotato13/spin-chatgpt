@@ -94,6 +94,7 @@ To get a local copy up and running follow these simple example steps.
     you can generate your API key [here](https://platform.openai.com/account/api-keys)
 
     ```sh
+    cp spin.toml.example spin.toml
     nano spin.toml
     ```
 
